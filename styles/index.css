@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&family=WindSong:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Sunflower:wght@300&family=WindSong:wght@500&display=swap');
+
+/* VARIABLES */
+
+:root {
+  --ff-title: 'WindSong', cursive;
+  --ff-primary: 'Sunflower', sans-serif;
+  --ff-secondary: 'Raleway', sans-serif;
+
+  --fs-title: 8vw;
+  --fs-primary: 2vw;
+  --fs-secondary: 1.5vw;
+  --fs-tertiary: 1.25vw;
+  --fs-general: 1vw;
+
+  --min-fs-primary: 15px;;
+  --min-fs-secondary: 15px;
+  --min-fs-tertiary: 12px;
+  --min-fs-general: 12px;
+
+  --c-background: #e4e1f8;
+  --c-dark: #291578;
+  --c-light: #1243BF70;
+}
+
+/* GENERAL STYLING */
+
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 3px solid black; */
+}
+
+body {
+  background-color: var(--c-background);
+}
+
+p {
+  font-size: var(--fs-general);
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  p {
+    font-size: var(--min-fs-general);
+  }  
+}
+
+h2 {
+  font-size: var(--fs-secondary);
+  background-color: var(--c-light);
+  padding: 1em;
+  text-align: center;
+}
+
+h3 {
+  font-size: var(--fs-tertiary);
+  background-color: var(--c-dark);
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+/* HEADER + NAVBAR */
+
+header {
+  height: 20em;
+  background: linear-gradient(125deg, #291578, #1243bf96);  
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index:3;
+  background-color: var(--c-dark);
+}
+
+.navbar > li > a {
+  text-decoration: none;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-primary);
+  
+  color: white;
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+.navbar > li {
+  list-style-type: none;
+}
+
+.navbar > li > a:hover {
+  background-color: white;
+  color: var(--c-dark);
+  transition: 0.3s ease;
+}
+
+h1 {
+  font-family: var(--ff-title);
+  font-size: var(--fs-title);
+  color: white;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  margin: 50px;
+  padding: 1em;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button, #submitButton {
+  margin: 25px;
+  padding: 10px 20px;
+  background-color: var(--c-background);
+  border: 2px solid var(--c-dark);
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: var(--c-dark);
+  color: white;
+}
+
+/* HOME CONTENT */
+
+#homeContent {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 1em;
+  justify-content: center;
+}
+
+picture > img {
+  width: 70%;
+  display: block;
+  margin: 1em;
+}
+
+#seeProjectsImg {
+  float: right;
+}
+
+#seeEcImg {
+  float: left;
+}
+
+.homeText {
+  text-align: center;
+  align-self: center;
+  width: 35%;
+  margin: auto;
+}
+
+#experimental {
+  text-align: center;
+  background-color: var(--c-light);
+  color: var(--c-dark);
+  padding: 1em;
+}
+
+.arrow {
+  width: 5vw;
+}
+
+form {
+  text-align: center;
+  font-family: var(--ff-secondary);
+  margin: 1em;
+  padding: 1em;
+}
+
+textarea {
+  width: 50%;
+  margin: 1em;
+}
+
+@media screen and (max-width:600px) {
+  picture > img {
+    width: 200px;
+  }
+
+  .arrow {
+    width: 50px;
+  }
+
+  header {
+    height: 200px;
+  }
+  h2 {
+    font-size: var(--min-fs-secondary);
+  }
+  h3 {
+    font-size: var(--min-fs-tertiary);
+  }
+  p {
+    font-size: var(--min-fs-general);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    height: 400px;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  font-family: var(--ff-secondary);
+  color: white;
+  background-color: var(--c-dark);
+  padding: 1em;
+}
+
+footer > h2 {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-secondary);
+  text-align: center;
+  background-color: var(--c-dark);
+  margin: 0px;
+}
+
+footer > h3 {
+  font-size: var(--fs-tertiary);
+}
+
+footer p {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  footer > h2 {
+    font-size: var(--min-fs-secondary);
+  }
+
+  footer > h3 {
+    font-size: var(--min-fs-tertiary);
+  }
+}
+
+.footer-grid {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+.footer-l, .footer-r {
+  width: 20vw;
+}
+
+

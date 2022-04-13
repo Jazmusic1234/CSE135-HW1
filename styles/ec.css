@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&family=WindSong:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Sunflower:wght@300&family=WindSong:wght@500&display=swap');
+
+/* VARIABLES */
+
+:root {
+  --ff-title: 'WindSong', cursive;
+  --ff-primary: 'Sunflower', sans-serif;
+  --ff-secondary: 'Raleway', sans-serif;
+
+  --fs-title: 8vw;
+  --fs-primary: 2vw;
+  --fs-secondary: 1.5vw;
+  --fs-tertiary: 1.25vw;
+  --fs-general: 1.25vw;
+
+  --min-fs-primary: 15px;;
+  --min-fs-secondary: 20px;
+  --min-fs-tertiary: 12px;
+  --min-fs-general: 10px;
+
+  --c-background: #e4e1f8;
+  --c-dark: #291578;
+  --c-light: #1243BF70;
+}
+
+/* GENERAL STYLING */
+
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 3px solid black; */
+}
+
+body {
+  background-color: var(--c-background);
+}
+
+p, figcaption {
+  font-size: var(--fs-general);
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  p, figcaption {
+    font-size: var(--min-fs-general);
+  }  
+}
+
+h1 {
+  font-family: var(--ff-title);
+  font-size: var(--fs-title);
+  color: white;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  margin: 50px;
+  padding: 100px;
+}
+
+h2 {
+  font-size: var(--fs-secondary);
+  background-color: var(--c-light);
+  padding: 1em;
+  text-align: center;
+  margin: 1em;
+}
+
+h3 {
+  font-size: var(--fs-tertiary);
+  padding: 1em;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 18vw;
+  position: left;
+  margin: auto;
+}
+
+figcaption {
+  text-align: center;
+  margin: 1em;
+}
+
+hr {
+  border: 3px solid var(--c-dark);
+  margin: 2em;
+}
+
+aside {
+  display: block;
+  padding: 1em;
+  background-color: var(--c-dark);
+  border-radius: 10px;
+  color: white;
+  margin: 2em;
+  float: right;
+  margin-top: 0px;
+  width: 30%
+}
+
+/* HEADER + NAVBAR */
+
+header {
+  height: 400px;
+  background: linear-gradient(125deg, #291578, #1243bf96);  
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index:3;
+  background-color: var(--c-dark);
+}
+
+.navbar > li > a {
+  text-decoration: none;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-primary);
+  
+  color: white;
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+.navbar > li {
+  list-style-type: none;
+}
+
+.navbar > li > a:hover {
+  background-color: white;
+  color: var(--c-dark);
+  transition: 0.3s ease;
+}
+
+/* Extracurricular */
+.ec {
+  margin: 1em;
+  padding: 1em;
+}
+
+.ec > p {
+  margin: 1em;
+}
+
+form {
+  text-align: center;
+  font-family: var(--ff-secondary);
+  margin: 1em;
+  padding: 1em;
+}
+
+.form, label, input, legend {
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+  font-family: var(--ff-secondary);
+  color: white;
+  background-color: var(--c-dark);
+  padding: 1em;
+}
+
+footer > h2 {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-secondary);
+  text-align: center;
+  background-color: var(--c-dark);
+  margin: 0px;
+}
+
+footer > h3 {
+  font-size: var(--fs-tertiary);
+}
+
+footer p {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  footer > h2 {
+    font-size: var(--min-fs-secondary);
+  }
+
+  footer > h3 {
+    font-size: var(--min-fs-tertiary);
+  }
+
+  header {
+    height: 200px;
+  }
+  h2 {
+    font-size: var(--min-fs-secondary);
+  }
+  h3 {
+    font-size: var(--min-fs-tertiary);
+  }
+  p {
+    font-size: var(--min-fs-general);
+  }
+}
+
+.footer-grid {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+.footer-l, .footer-r {
+  width: 20vw;
+}
+
+

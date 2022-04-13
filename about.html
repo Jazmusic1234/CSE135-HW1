@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jasmine Chen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/about.css">
+  <style></style>
+</head>
+
+<body>
+  <header>
+    <div id="header">
+      <ul class="navbar">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="ec.html">Extracurriculars</a></li>
+        <li><a href="methodtest.html">Part 1</a></li>
+        <li><a href="crud.html">Part 3</a></li>
+      </ul>
+
+      <h1>About Me</h1>
+    </div>
+  </header>
+  
+  
+  <div class="about-me">
+  <div class="left aside">
+    <aside id="quote">
+      <h3>Favorite Quote</h3>
+      <p><i>This too shall pass.</i></p>
+    </aside>
+
+    <aside id="music">
+      <h3>Currently learning: Fly Me to the Moon</h3>
+      <audio controls>
+        <source src="imgs/fly_me_to_the_moon.mp3" type="audio/mpeg">
+      </audio>
+      <br>
+      <iframe width="50%" src="https://www.youtube.com/embed/2Z603ccaj74" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </aside>
+  </div>
+    
+    
+    <img id="profilepic" width=500px src="imgs/Profile_pic.jpg" alt="picture of Jasmine">
+    
+    <div class="card" id="info">
+      <p><b>Age</b> 22</p>
+      <p><b>Location</b> San Diego, CA</p>
+      <p><b>US Citizen</b> Yes</p>
+    </div>
+    <div class="card" id="hobbies">
+      <h3><b>Hobbies</b></h3>
+      <ol>
+        <li><em>Gardening</em></li>
+        <li>Listening to music</li>
+        <li>Dancing</li>
+        <li>Playing guitar</li>
+        <li>Reading</li>
+      </ol>
+    </div>
+    
+    <div class="card" id="tech">
+      <h3><b>Tech</b></h3>
+      <ol>
+        <li><strong>C/C++</strong></li>
+        <li>Python</li>
+        <li><span>Amazon Athena</span></li>
+        <li><span>Amazon Glue</span></li>
+        <li>HTML/CSS</li>
+        <li>Javascript</li>
+      </ol>
+    </div>
+
+    <div class="card" id="motivations">
+      <h3><b>Motivations</b></h3>
+      <ol>
+        <li>Achievement</li>
+        <li>Growth</li>
+        <li>Network Building</li>
+      </ol> 
+    </div>
+  </div>
+  
+  <br>
+  <hr>
+  <br>
+
+  <section>
+    <h3>Favorite Playlist</h3>
+    <video width="320" height="240" controls>
+      <source src="https://www.youtube.com/watch?v=-ZI0V46j10k&t=1160s"> 
+    </video>
+  </section>
+  
+
+  
+  
+  <br>
+  <hr>
+
+  <div>
+    <h2>Experimental Section</h2>
+    <canvas id="myCanvas" width="800" height="300"></canvas>
+
+      <svg width="300" height="400">
+        <polygon points="105,10 45,200 200,68 10,70 170,198" style="fill:blue;stroke:blueviolet;stroke-width:3;"></polygon>
+      </svg>
+  </div>
+
+  <script>
+      var canvas = document.getElementById("myCanvas");
+      var context = canvas.getContext("2d");
+
+      var gradient = context.createLinearGradient(80,10,620,300);
+      gradient.addColorStop(0, "#291578");
+      gradient.addColorStop(1, "#1243BF");
+
+      context.fillStyle = gradient;
+      context.fillRect(10,10,700,300);
+    </script>
+
+    <footer>
+    <h2>CONTACT ME</h2>
+    <div class="footer-grid">
+      <div class="footer-l">
+        <h3>Email</h3>
+        <p>jcc001@ucsd.edu</p>
+      </div>
+      <div class="footer-r">
+        <h3>Github</h3>
+        <p>ww.github.com/Jazmusic1234</p>
+        <h3>LinkedIn</h3>
+        <p>www.linkedin.com/in/chencjasmine</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
